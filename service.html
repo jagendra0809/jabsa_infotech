@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website using tailwind</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100" >
+     
+  <nav class="bg-pink-50 border-b border-gray-200">
+   <div class="container mx-auto flex items-center justify-between p-4">
+     <a href="#" class="flex items-center">
+       <img src="https://jabsainfotech.com/logo.png" class="h-10 mr-3" alt="Logo">
+
+       
+      
+     </a>
+     <button class="block lg:hidden p-2 text-gray-700 rounded-md focus:outline-none" id="navbar-toggle">
+       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+       </svg>
+     </button>
+     <div class="hidden lg:flex lg:items-center lg:space-x-6" id="navbar-menu">
+       <a href="index.html" class="text-sm font-medium text-gray-700 hover:text-red-600">Home</a>
+       <a href="about.html" class="text-sm font-medium text-gray-700 hover:text-red-600">About</a>
+       <a href="service.html" class="text-sm font-medium text-gray-700 hover:text-red-600">Services</a>
+       <a href="tech.html" class="text-sm font-medium text-gray-700 hover:text-red-600">Technologies</a>
+       <a href="contact.html" class="text-sm font-medium text-gray-700 hover:text-red-600">Contact</a>
+       <a href="career.html" class="text-sm font-medium text-gray-700 hover:text-red-600">Career</a>
+     </div>
+   </div>
+   
+   <header>
+     <h1 class="text-4xl mt-6 ml-2 sm:ml-12 lg:ml-24  text-orange-300 font-bold">Our Services</h1>
+   </header>
+ </nav>
+ <script>
+ document.getElementById('navbar-toggle').addEventListener('click', function() {
+   document.getElementById('navbar-menu').classList.toggle('hidden');
+ });
+</script>
+
+
+
+<div class="container mx-auto p-6 mt-20 mb-40">
+   <h1 class="text-3xl font-semibold text-center mb-4 text-orange-500">What We Do?</h1>
+   <h2 class="text-2xl font-semibold text-center mb-6">The service we offer are specifically designed to meet <br> our client's needs. <br><br></h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+       <!-- Card 1 -->
+       <div class="bg-white rounded-3xl shadow-lg p-6 text-center">
+           <img src="https://jabsainfotech.com/icons/Icon10-4.png" alt="SEO Services" class="w-28 h-28 mx-auto mb-4">
+           <h2 class="text-xl font-semibold mb-2">SEO Services</h2>
+           <p class="text-gray-600">Websites optimized for search engines <br> are found first by clients. We can help <br>rank your site on Search engines.</p>
+       </div>
+
+       <!-- Card 2 -->
+       <div class="bg-white rounded-3xl shadow-lg p-6 text-center">
+           <img src="https://jabsainfotech.com/icons/E-Commerce-3.png" alt="Web Design" class="w-28 h-28 mx-auto mb-4">
+           <h2 class="text-xl font-semibold mb-2">Web Design</h2>
+           <p class="text-gray-600">Your business deserves a stunning <br> website for your clients.Let build it <br> together.</p>
+       </div>
+
+       <!-- Card 3 -->
+       <div class="bg-white rounded-3xl shadow-lg p-6 text-center">
+           <img src="https://jabsainfotech.com/icons/Social%20Media-2.png" alt="App Development" class="w-28 h-28 mx-auto mb-4">
+           <h2 class="text-xl font-semibold mb-2">App Development</h2>
+           <p class="text-gray-600">You have a milian doller app idea! Great <br> we've got you covered on both Android <br>and iOS.</p>
+       </div>
+
+       <!-- Card 4 -->
+       <div class="bg-white rounded-3xl shadow-lg p-6 text-center">
+           <img src="https://jabsainfotech.com/icons/digitalmarket-2.png" alt="Digital Marketing" class="w-28 h-28 mx-auto mb-4">
+           <h2 class="text-xl font-semibold mb-2">Digital Marketing</h2>
+           <p class="text-gray-600">A great product is of no use if people <br> dont know it exist.Don't worry we've <br> got you covered on digital worl</p>
+       </div>
+
+       <!-- Card 5 -->
+       <div class="bg-white rounded-3xl shadow-lg p-6 text-center">
+           <img src="https://jabsainfotech.com/icons/glow_Hologram-3.png" alt="Game Development" class="w-28 h-28 mx-auto mb-4">
+           <h2 class="text-xl font-semibold mb-2">Game Development</h2>
+           <p class="text-gray-600">Have a game ideas in mind? Our game <br> development  team can build all types of <br>simple to sophisticated game</p>
+       </div>
+
+       <!-- Card 6 -->
+       <div class="bg-white rounded-3xl shadow-lg p-6 text-center">
+           <img src="https://jabsainfotech.com/icons/glow_Icon01-3.png" alt="API Development" class="w-28 h-28 mx-auto mb-4">
+           <h2 class="text-xl font-semibold mb-2">API Development</h2>
+           <p class="text-gray-600">Need API for your business? Our team <br> can build API for any kind of business <br> needs.</p>
+       </div>
+
+       <!-- Card 7 -->
+       <div class="bg-white rounded-3xl shadow-lg p-6 text-center">
+           <img src="https://jabsainfotech.com/icons/Business_1.png" alt="SaaS Development" class="w-28 h-28 mx-auto mb-4">
+           <h2 class="text-xl font-semibold mb-2">SaaS Development</h2>
+           <p class="text-gray-600">SaaS development is our strength. <br>From B2B to B2C our team can build <br>scalable SaaS product in no time</p>
+       </div>
+
+       <!-- Card 8 -->
+       <div class="bg-white rounded-3xl shadow-lg p-6 text-center">
+           <img src="https://jabsainfotech.com/icons/glow_Drawing_Board_1.png" alt="Landing Pages" class="w-28 h-28 mx-auto mb-4">
+           <h2 class="text-xl font-semibold mb-2">Landing Pages</h2>
+           <p class="text-gray-600">Our team crafts the landing page as per <br>client requirements.A well crafted <br>landing page can boost conversions <br> significantly.</p>
+       </div>
+   </div>
+ </div>
+
+
+    <img src="https://jabsainfotech.com/wave-haikei.svg" alt="">
+    <footer class="bg-slate-700 text-white">
+     <div class="container mx-auto py-8 px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+         <div>
+             <img  src="https://jabsainfotech.com/logo.png" alt="" class=" h-24 w-44 bg-white">
+             <p class="ml-4 mt-3 text-xl">Connect with Us</p>
+             <div class="flex space-x-4 mt-2 ml-7">
+                 <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AAABeXl7ExMR1dXV8fHxtbW2CgoL29vbj4+Px8fH6+vro6Oijo6PHx8fNzc2dnZ1GRkaWlpY+Pj6oqKiOjo7a2tq0tLS+vr4iIiJYWFiurq7V1dVmZmZSUlIuLi4SEhIZGRklJSUNDQ1DQ0PRG0pFAAAE00lEQVR4nO2dW3uiQAyGZzyjIGg9V+12d///b9xSbYsKJC3JzuH53qu9WCDvQ4WZTCYY+8WimCcTEzqTpL98qliZz3+tp65jE2S6fjAczFwHJczkdGvYdx2QAruqYeo6GhWSL8M4Ba+KpWHuOhI15hfDses4FBm+G7qOQpXSMHMdhCrFm2FsL8JbZtb0XMegTM+sXIegzMocXYegTG5ifdt/kJq4HzQmej8AAAAAAAAAcEGSjV7KNPLLKNu4jkWBWbavrMrZX0Vsc8vCPrB0HZMkyf5R8O0+xvO3uq3zK3l2HZkQWZNgLH+pz82C1hauoxPg2CZo7dx1fN1pF7Q2+AKVIWV4ch1hR1JK0NrA3xkD2jDsBboZLWht0NVUje/6KkEvlI84hmfXUXaBIxh0OceEZxjwMmvCMwy4qirnGQZc2sg03LmO8+cQo+4I7iFjzFYScskKzzDkQc0Ly9B1lF0YcwQHrqPsAuthGvCj1PB+iK5j7EZLnu2DtesYO0Ibhp7eJ2eIQc8O3zm3Cz65jq87RCIj+GSiIYZuievoRGiZJQaeSfxk2jB424c8IL1jXScY136i9HTv14vjJ1ghXVYWgl/XAWefWkj7xXgwGC93ceoBAAAAAABQYbo55vN5nm/SGDIkt8zy4nRbybo/jLex5BFMmi2aciXnQtNyNRi2U1t/uSGOemgDsGvUu05Il2oZE7Ki5lB3VJ84aHT73xlrB9b2lG4kWdhWW9ZGGd4syLEKr0oOKjNvdcPkifi/VTRWgbQNa7Y5tLGXv43KhofvCVqF9VhVw+nrtwXlF7s0DZnFLPcI7w9QNPyhoPRGFj1DZuFjHaIlSnqGvFqdeiTH5GqGrPLjJiTLkrUMd10Erd36b9hNULKIR8dwXLsg+R3kxm86hgKIPWy8NRS7id4aiv0S/TWUepz6a7iI3lCq+NpjQ6Gulh4bCg3dPDYUqmz12VBmv5XPhjL9Dnw2lPkh/hfDp/X2WK40TdI8eyigayEQw9fs7sW2/c09VCR5qm5YN/haMY8V2TSnbHiuf+IzN6+K5BV1DYdNl52yDhfZcaVq2BIh6y6KPEw1DVv3anDWFP/4btg+OajtTXWH54bEkISTb5SYQCkaUpdmnEJi4VvPkEwlMTKOEmNvPUNyQLKhzyGxXKpmyNj0Rp9EYp1NzZAxHqEH4RLrwWqGjIcEXcUgMUNUM2Rcmz6LROJby5Cz95QeuUlsLtMybBxzV6D7cHHO4sqQ9YwgzyIxudAyZL3JyKHpiD6HM0NWOcXfkA1Z+zPJmjCfDVmzAvKV77MhKyNPXtxnQ9bFydaiMIShc0OyiRMMYQhDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjC8IEfdSyXMjwJGC4PvVYOtZscj+f2o3q8fg8ZdXGZLkMAAAAAAAAAAEAEyLRT9peZif0b4qkR/eqOh+RGqHO7t6xMbbYzInpGqHO7r8ysEf9Om19kb4aCnxXyEFsaSrSt85Xhu6HQFwZ8ZG4vhjK92z3kve3ipW9fnIqXvpLXzoQi/ek949pK+qP34iC21+Lk4+ODX90l9b4K7YDpVxvpav/MRTFPwv9e+yTpL6vfUP4HF39PiMZ66QwAAAAASUVORK5CYII=" alt="LinkedIn" class="w-6 h-6"></a>
+                 <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8AAADx8fGxsbH39/e+vr6KioopKSkoKCj7+/vg4OBAQECNjY0JCQkNDQ1aWlpfX19LS0tGRkbp6enQ0NCDg4OhoaEjIyPb29urq6vm5uaamprDw8MwMDBubm4dHR02NjaVlZVUVFR3d3dmZmYVFRV4y9GXAAAC9klEQVR4nO3dC3LaMBRGYTAmwUB4Q3iEJqFk/1tshnZSaKfgK1+k3+45C2D0zYAsGyFarbQVeb+7GU6mg/3rqP3V00WjU7P3IvFY7WWL3bfXdvl689QjNtVfTUe3UZcdUw+6fPPVm1V3Kks98JItxkG8z15SD71MRWcW6mu3u6lHX6LuY7ivDsL+tIpPX5gvq/nkhet9VaC4cFXZpy3MJw5AZWE28AAKC+fPLkBdYd/Hpyt0A6oKs17ThT6TjLDw6AfUFO4cgZLCtSdQUhh2L18jYeW7CXWh73tUUXhouvDFGagn9J1mBIUdb6Cc0G89Kip0/xTKCYOfbNdFuPUHigkfGi90v1SoCb0XbHrC98YLHZ9daArvMZNqCf1XbGpC51vfX61Ts85yeoz/R3lq1ll3Aa5Sq85a3AM4TK06L3yieR4cjsuHvxtu+qlRF4VNNOPOQumTdrWQO6el0kx5s4Bldy32O31VmC8WH9vUY7ZlX7MprVbKZL51mqQesTWzsF4fwlbABT/1gM1Zhd9TD9icVbhLPWBzXaOwbjOpfVmqteQsk1VYlx3qv0OIUD+ECPVDiFA/hAj1Q4hQP4QI9UOIUD+EdRDm2ZXyjVG4vfZqP4t8OM38+GE0VO4t6ncbfj97tXSIKKxwOkmV4m2JmqcBtqfRhHf4IUWp9tFmG+u3g171om2YQogQ4f8rfESIECFChAgRIkSIECFChAgRIkSIECFChAgRIkSIsHbC5u9UyBIJI24Zqvh/OKFt4gnT7PoaxwN+vk89D8sv1yj6MVhF/u8K6+7L+bVXOxWbd6sm7KC9HkKE+iFEqB9ChPohRKgfQoT6IUSoH0KE+iFEqB9ChPohRKgfQoT6IUSoH0KE+iFEqB9ChPohRKgfQoT6IUSoH0KE+iFEqB9ChPohRKgfQoT6IUSoH0KE+iFEqB9ChPohRKgfQoT6IUSoX/OF1nN46ydc24Cz1OMNaGASRj+a1CHTKbVRD5d1K1vuy/GeZnc+HvgHllpO87YiSVIAAAAASUVORK5CYII=" alt="Facebook" class="w-6 h-6"></a>
+                 <a href="#"><img src="data:image/png;base64,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" alt="Instagram" class="w-6 h-6"></a>
+             </div>
+         </div>
+         
+         <div class="flex flex-col space-y-2 ml-24">
+           <p class="text-orange-500 font-semibold">EXPLORE</p>
+             <a href="index.html" class="hover:text-gray-300">Home</a>
+             <a href="about.html" class="hover:text-gray-300">About</a>
+             <a href="service.html" class="hover:text-gray-300">Services</a>
+             <a href="contact.html" class="hover:text-gray-300">Contact</a>
+             <a href="career.html" class="hover:text-gray-300">Career</a>
+         </div>
+         
+         <div>
+             <h3 class="text-3xl mb-2 ml-11">Write to us</h3>
+             <p class="bg-white h-14 w-60 text-center rounded-sm text-slate-500">contact@jabsainfotech.com</p>
+         </div>
+     </div>
+     <div class="bg-orange-400 text-center py-4 mt-4">
+       <div class="sm:flex sm:items-center sm:justify-between">
+         <span class="text-lg text-gray-500 sm:text-center dark:text-black ml-28">© Copyright 2023 | Jabsa Infotech Private Limited. | All Rights Reserved.
+         </span>
+         <div class="flex mt-4 sm:justify-center sm:mt-0">
+             <p class="text-black mr-2">Developed & Maintained by </p><span class="mr-56">Jabsa Infotech Pvt Ltd</span>
+         </div>
+     </div>
+ </footer>
+
+</body>
+</html>
